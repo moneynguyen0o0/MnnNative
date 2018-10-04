@@ -1,0 +1,2 @@
+# MnnNative
+React native boilerplate

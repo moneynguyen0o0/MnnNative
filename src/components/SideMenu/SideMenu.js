@@ -5,11 +5,11 @@ import {
   Image,
   SafeAreaView,
   ScrollView,
-  TouchableOpacity,
-  StyleSheet,
-  StatusBar
+  TouchableOpacity
 } from 'react-native';
 import { DrawerItems } from 'react-navigation';
+
+import styles from './styles';
 
 const LOGO_URL = 'https://enotif.herokuapp.com/assets/3vfPeAD.png';
 
@@ -38,21 +38,5 @@ class SideMenu extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    backgroundColor: '#0033FF',
-    paddingVertical: 28,
-    paddingLeft: 17,
-    paddingTop: StatusBar.currentHeight + 10,
-    alignItems: 'center',
-  },
-  header: {
-    color: '#FFF',
-    paddingLeft: 9,
-    fontSize: 16
-  }
-});
 
 export default SideMenu;

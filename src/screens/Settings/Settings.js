@@ -3,11 +3,12 @@ import { func } from 'prop-types';
 import { connect } from 'react-redux';
 import {
   View,
-  Button,
-  StyleSheet
+  Button
 } from 'react-native';
 
 import { actions as sessionActions } from 'store/reducers/session';
+
+import styles from './styles';
 
 class Settings extends Component {
   static propTypes = {
@@ -33,14 +34,6 @@ class Settings extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-});
 
 export default connect(null, {
   logout: sessionActions.requestLogout

@@ -4,9 +4,10 @@ import {
   View,
   Text,
   TextInput,
-  TouchableOpacity,
-  StyleSheet
+  TouchableOpacity
 } from 'react-native';
+
+import styles from './styles';
 
 class LoginForm extends Component {
   static propTypes = {
@@ -62,26 +63,5 @@ class LoginForm extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    alignSelf: 'stretch'
-  },
-  input: {
-    backgroundColor: 'rgba(225,225,225,0.2)',
-    marginBottom: 10,
-    padding: 15,
-    color: '#fff'
-  },
-  buttonContainer: {
-    backgroundColor: '#2980b6',
-    paddingVertical: 20
-  },
-  buttonText: {
-    color: '#fff',
-    textAlign: 'center',
-    fontWeight: '700'
-  }
-});
 
 export default LoginForm;

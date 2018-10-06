@@ -5,12 +5,13 @@ import {
   View,
   Text,
   KeyboardAvoidingView,
-  ActivityIndicator,
-  StyleSheet
+  ActivityIndicator
 } from 'react-native';
 
 import { actions as sessionActions } from 'store/reducers/session';
 import LoginForm from 'components/LoginForm';
+
+import styles from './styles';
 
 class SignIn extends Component {
   static propTypes = {
@@ -55,38 +56,6 @@ class SignIn extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#2c3e50'
-  },
-  headerContainer: {
-    flex: 1,
-    justifyContent: 'flex-end'
-  },
-  errorContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: 'center'
-  },
-  formContainer: {
-    flex: 1,
-    padding: 20,
-    justifyContent: 'flex-end'
-  },
-  title: {
-    color: '#FFF',
-    fontSize: 36,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    opacity: 0.9
-  }
-});
 
 const mapStateToProps = ({ session }) => ({ session });
 

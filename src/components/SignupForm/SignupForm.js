@@ -5,9 +5,10 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  StyleSheet,
   StatusBar
 } from 'react-native';
+
+import styles from './styles';
 
 class SignupForm extends Component {
   static propTypes = {
@@ -75,28 +76,5 @@ class SignupForm extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    alignSelf: 'stretch'
-  },
-  input: {
-    marginBottom: 10,
-    height: 50,
-    color: '#fff',
-    borderBottomColor: '#3498db',
-    borderBottomWidth: 1
-  },
-  buttonContainer: {
-    marginTop: 40,
-    backgroundColor: '#2980b6',
-    paddingVertical: 20
-  },
-  buttonText: {
-    color: '#fff',
-    textAlign: 'center',
-    fontWeight: '700'
-  }
-});
 
 export default SignupForm;

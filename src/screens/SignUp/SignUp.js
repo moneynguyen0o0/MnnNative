@@ -3,11 +3,12 @@ import {
   View,
   Text,
   KeyboardAvoidingView,
-  Alert,
-  StyleSheet
+  Alert
 } from 'react-native';
 
 import SignupForm from 'components/SignupForm';
+
+import styles from './styles';
 
 class SignUp extends Component {
   onSubmit = user => {
@@ -27,27 +28,5 @@ class SignUp extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#2c3e50',
-  },
-  headerContainer: {
-    alignItems: 'center',
-    flexGrow: 1,
-    justifyContent: 'center'
-  },
-  formContainer: {
-    padding: 20
-  },
-  title: {
-    color: '#FFF',
-    fontSize: 36,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    opacity: 0.9
-  }
-});
 
 export default SignUp;

@@ -1,7 +1,7 @@
 import { takeLatest, call, put } from 'redux-saga/effects';
 
-import { actions, types } from 'store/reducers/session';
-import * as Api from 'services/api';
+import { actions, types } from '../reducers/session';
+import * as Api from '../../services/api';
 
 // WORKERS
 

@@ -1,5 +1,5 @@
-import request from 'utils/request';
-import { getAuthHeader } from 'utils/auth';
+import request from '../utils/request';
+import { getAuthHeader } from '../utils/auth';
 
 const login = (email, password) => request({ method: 'post', url: '/auth/login', data: { email, password } });
 const fetchUsers = (auth) => request({ url: '/users', headers: getAuthHeader(auth) });

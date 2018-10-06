@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import { persistReducer } from 'redux-persist';
 
-import { authPersistConfig } from 'config/persist';
 import sessionReducer from './session';
 import * as userReducer from './user';
+import { authPersistConfig } from '../../config/persist';
 
 const reducers = {
   session: persistReducer(authPersistConfig, sessionReducer),

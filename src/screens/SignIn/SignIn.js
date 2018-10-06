@@ -8,8 +8,8 @@ import {
   ActivityIndicator
 } from 'react-native';
 
-import { actions as sessionActions } from 'store/reducers/session';
-import LoginForm from 'components/LoginForm';
+import { actions as sessionActions } from '../../store/reducers/session';
+import LoginForm from '../../components/LoginForm';
 
 import styles from './styles';
 

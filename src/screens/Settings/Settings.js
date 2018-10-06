@@ -6,7 +6,7 @@ import {
   Button
 } from 'react-native';
 
-import { actions as sessionActions } from 'store/reducers/session';
+import { actions as sessionActions } from '../../store/reducers/session';
 
 import styles from './styles';
 

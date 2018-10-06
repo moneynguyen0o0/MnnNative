@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { API_URL } from 'config/http-client';
+import { API_URL } from '../config/http-client';
 
 const getConfig = (config = {}) => {
   config.method = config.method || 'get';

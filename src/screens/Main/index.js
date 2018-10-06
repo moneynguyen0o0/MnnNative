@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { object } from 'prop-types';
 import { connect } from 'react-redux';
 
-import { isUserAuthenticated } from 'utils/auth';
+import { isUserAuthenticated } from '../../utils/auth';
 
 class Main extends Component {
   static propTypes = {

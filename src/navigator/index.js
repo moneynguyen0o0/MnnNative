@@ -16,12 +16,12 @@ import {
   UserListScreen,
   UserAddScreen,
   SettingsScreen
-} from 'screens';
+} from '../screens';
 
 import {
   MenuIcon,
   SideMenu
-} from 'components';
+} from '../components';
 
 const HomeTabNavigator = createBottomTabNavigator({
   HomeScreen: {

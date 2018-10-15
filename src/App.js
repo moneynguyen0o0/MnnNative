@@ -7,7 +7,7 @@ import configureStore from './store';
 import rootSaga from './store/sagas';
 import Navigator from './navigator';
 import getTheme from './theme/components';
-import { Loading } from './components';
+import { LoadingScreen } from './screens';
 
 const { store, persistor } = configureStore();
 
@@ -16,7 +16,7 @@ store.runSaga(rootSaga);
 
 const App = () => (
   <Provider store={ store }>
-    <PersistGate persistor={ persistor } loading={ <Loading /> }>
+    <PersistGate persistor={ persistor } loading={ <LoadingScreen /> }>
       <StyleProvider style={ getTheme() }>
         <Root>
           <Navigator />
